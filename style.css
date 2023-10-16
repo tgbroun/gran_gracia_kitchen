@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+
+
+.swiper {
+    width: 100%;
+    
+}
+*{
+    font-family: 'Varela Round', sans-serif;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    overflow-x: hidden;
+}
+.cotainer{
+    overflow: hidden;
+}
+.navb{
+    background-color: rgb(1, 0, 20);    
+    width: 100%;
+    position: fixed;
+    z-index: 1000;
+}
+.logo{
+    color: #FEA116;
+}
+
+.main-backgound{
+    background-image: linear-gradient(rgba(0, 9, 32, 0.938), rgba(0, 0, 26, 0.918)), url('image/15\ Coisas\ Idiotas\ Para\ Se\ Fazer\ Na\ Fila\ Do\ Mc\ Donald’s\ _\ 2023.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;  
+    opacity: 0.9;
+    height: 60rem;
+    top: 0;
+        
+}
+.main-backgound h1{
+    font-size: 67px;
+    font-family: 'Varela Round', sans-serif;
+    
+}
+.main-backgound p{
+    font-family: 'Varela Round', sans-serif;
+}
+.main-view{
+    
+    height: 40rem;
+}
+.btn{
+    color: #ffff;
+    background-color: #FEA116;
+}
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.pot{
+    animation: rotate 50s linear infinite;
+    /* width: auto; */
+}
+
+.white{
+    background-color: #ffff;
+    
+}
+.card-icon{
+    /* font-size: 70px; */
+    color: #FEA116;
+}
+.card{
+    margin: 100px 0;
+}
+.white .card:hover{
+    background-color: #FEA116;
+    color: #ffff;
+}
+
+/* Start About Us */
+.about-us h3{
+    font-family: 'Pacifico', cursive;
+    color: #FEA116;
+}
+.about-us h1{
+    font-family: 'Varela Round', sans-serif;
+    font-size: 37px;
+}
+.about-us p{
+    font-size: 15px;
+    font-family: 'Varela Round', sans-serif;
+    
+}
+.counter h1{
+    color: #FEA116;
+    border-left: 5px solid #FEA116;
+    padding-left: 25px;
+    font-size: 50px;    
+}
+/* End About Us */
+
+/* Start Food Menu */
+.price{
+    color: #FEA116;
+}
+/* End Food Menu */
+
+/* Start Team Members */
+.team-member .card:hover{
+    background-color: #ffff;
+    cursor: pointer;
+    
+}
+.team-member .card:hover .media{    
+    color: #FEA116;
+    opacity: 0.9;
+
+}
+.team-member .card .card-img:hover {
+    transform: scale(1.2);
+    
+    
+}
+.team-member .card .card-img{
+    transition: transform 0.3s;
+    overflow: hidden;
+    
+}
+.media{
+    background-color: #FEA116;
+    width: 50px;
+    height: 50px;
+    opacity: 0;
+    color: #ffff;
+    transition: ease-in-out 1s;
+    transition-duration: 500ms;
+}
+/* swiper */
+.swiper-pagination{
+      
+    
+}
+
+/* Start Footer */
+footer{
+    background-color: #0F172B;
+    height: 28rem;
+}
+footer a{
+    text-decoration: none;
+    
+}
+footer .footer-menu{
+    display: flex;
+    justify-content: end;
+}
+.media-icon{
+    width: 40px;
+    height: 40px;
+}
+.signup{
+    background-color: #FEA116;
+}
+.form-body{
+    background-color: white;
+    height: 65px;
+    border: 1px solid #FEA116;
+    
+}
+/* media query for mobile */
+@media (max-width: 767px) {
+    body {
+        font-size: 14px; 
+    }
+    .main-backgound{
+        text-align: center;
+        height: 70rem;
+    }
+
+    .main-backgound h1{
+        font-size: 40px;
+    }
+    .main-backgound .pot{
+        width: 100%;
+        margin-top: 70px;
+        display: flex;
+        justify-content: center;
+        align-items: center;   
+    }
+    .menu{
+        display: flex;
+        flex-wrap: wrap;
+        padding-left: 0;
+        margin-bottom: 0;
+        padding-bottom: 0;
+
+    }
+    footer{
+        height: 60rem;
+    }
+    footer .footer-menu{
+       
+               
+        display: flex;
+        justify-content: center;   
+    }
+   
+
+}
+
+/* Media query for tablet devices */
+@media (min-width: 768px) and (max-width: 1023px) {
+    body {
+        font-size: 18px; 
+    }
+    .main-backgound{
+        text-align: center;
+        height: 85rem;
+    }
+    .main-backgound h1{
+        font-size: 40px;
+    }
+    .main-backgound .pot{
+        width: 100%;
+        margin-top: 70px;
+        display: flex;
+        justify-content: center;
+        align-items: center;   
+    }
+    footer{
+        height: 70rem;
+    }
+    footer .footer-menu{
+       
+               
+        display: flex;
+        justify-content: center;   
+    }
+}
+
+
+   
